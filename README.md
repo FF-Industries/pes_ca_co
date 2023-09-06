@@ -57,7 +57,7 @@ gtkwave tb_pes_se_M.vcd
 
 <img width="870" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/909ce7eb-c3b7-4c8a-be7b-d03ebee01306">
 
-
+Now on observing both the waveforms we get the same result hence the synthesis and simulation are matching.
 
 
 
