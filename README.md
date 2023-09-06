@@ -8,6 +8,11 @@
 * Codes can be found in the file section.
 * Using this code we are doing GLS Process to verify Sequential multiplier.
 
+<img width="633" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/5e576c0d-4100-4439-b4f7-23badf641ed9">
+
+<img width="399" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/9458d1b7-aa7c-49f4-b445-6317335fb22c">
+
+
 ### Simulation :
 First we simulate and look at the waveform by normal iverilog way :
 #### Commnads :
