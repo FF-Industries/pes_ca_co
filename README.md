@@ -8,9 +8,9 @@
 * Codes can be found in the file section.
 * Using this code we are doing GLS Process to verify Sequential multiplier.
 
-<img width="633" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/5e576c0d-4100-4439-b4f7-23badf641ed9">
+<img width="633" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/5e576c0d-4100-4439-b4f7-23badf641ed9">&nbsp;
 
-<img width="399" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/9458d1b7-aa7c-49f4-b445-6317335fb22c">
+<img width="399" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/9458d1b7-aa7c-49f4-b445-6317335fb22c">&nbsp;
 
 
 ### Simulation :
@@ -23,7 +23,7 @@ gtkwave tb_pes_se_M.vcd
 ```
 #### Output :
 
-<img width="921" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/85ae8fd0-d376-41d1-b9be-3a1e97eea19a">
+<img width="921" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/85ae8fd0-d376-41d1-b9be-3a1e97eea19a">&nbsp;
 
 ![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/163a2dd8-f5ac-4af8-a04b-c43647c0c92d)
 
@@ -53,15 +53,15 @@ Now using synthesis we will check the waveform if it matches th inital waveform 
 
 #### Commands :
 ```
-iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v half_adder.v full_adder.v pes_se_M.v tb_pes_se_M.v
+iverilog ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd.v half_adder.v full_adder.v pes_se_M.v tb_pes_se_M.v
 ./a.out
 gtkwave tb_pes_se_M.vcd
 ```
 #### Output :
 
-<img width="923" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/fe5cf818-6807-484c-b62d-6ddee7f00de7">
+<img width="918" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/950fc08b-3fd8-4938-b2c9-0dc154cb57af">&nbsp;
 
-<img width="870" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/909ce7eb-c3b7-4c8a-be7b-d03ebee01306">
+<img width="870" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/909ce7eb-c3b7-4c8a-be7b-d03ebee01306">&nbsp;
 
 Now on observing both the waveforms we get the same result hence the synthesis and simulation are matching.
 
