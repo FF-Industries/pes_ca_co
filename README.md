@@ -32,22 +32,22 @@ Now we use yosys tool to generate the design :
 
 #### Commands :
 ```
-read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog half_adder.v full_adder.v pes_se_M.v tb_pes_se_M.v
 synth -top pes_se_M
-dfflibmap -liberty ../my_lb/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-abc -liberty ../my_lib//lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show pes_se_M
 ```
 #### Output :
 
-<img width="381" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/86b8b581-09ed-4a3c-9921-73ca0023cbb2">&nbsp;
+<img width="911" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/e25a70a0-3983-4bd3-8a6d-1002cc9d6534">&nbsp;
 
-<img width="372" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/87b86504-aee3-4d40-b562-b790908e7768">&nbsp;
+<img width="918" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/d409ba69-1dda-41c6-9b59-f02233a3d579">&nbsp;
 
-<img width="230" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/3f257ce2-647f-4696-af58-68b116989e00">&nbsp;
+<img width="919" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/0e5221c8-4d52-43d8-bfdf-eba73fd79a43">&nbsp;
 
-<img width="911" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/c21326e0-e2be-449f-881d-f2a30d00f83c">&nbsp;
+<img width="921" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/7e38e8a0-8426-44cd-bcb7-ed866b7a2c0d">&nbsp;
 
 Now using synthesis we will check the waveform if it matches th inital waveform :
 
