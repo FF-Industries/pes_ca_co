@@ -53,7 +53,7 @@ Now using synthesis we will check the waveform if it matches th inital waveform 
 
 #### Commands :
 ```
-iverilog ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd.v half_adder.v full_adder.v pes_se_M.v tb_pes_se_M.v
+iverilog ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd.v pes_se_M_half_adder.v pes_se_M_full_adder.v pes_se_M.v tb_pes_se_M.v
 ./a.out
 gtkwave tb_pes_se_M.vcd
 ```
