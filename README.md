@@ -17,15 +17,16 @@
 First we simulate and look at the waveform by normal iverilog way :
 #### Commnads :
 ```
-iverilog half_adder.v full_adder.v pes_se_M.v tb_pes_se_M.v
+iverilog pes_se_M_half_adder.v pes_se_M_full_adder.v pes_se_M.v tb_pes_se_M.v
 ./a.out
 gtkwave tb_pes_se_M.vcd
 ```
 #### Output :
 
-<img width="808" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/ed2e5fe6-f47a-44c3-8fd3-66040a0afb73">
+<img width="921" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/85ae8fd0-d376-41d1-b9be-3a1e97eea19a">
 
-<img width="762" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/10d80ab4-44c0-4070-87d2-03f5d89f3721">
+![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/163a2dd8-f5ac-4af8-a04b-c43647c0c92d)
+
 
 Now we use yosys tool to generate the design :
 
