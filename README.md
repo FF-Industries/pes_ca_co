@@ -37,6 +37,7 @@ read_verilog half_adder.v full_adder.v pes_se_M.v tb_pes_se_M.v
 synth -top pes_se_M
 dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog pes_se_M_net.v
 show pes_se_M
 ```
 #### Output :
