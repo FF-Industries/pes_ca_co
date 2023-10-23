@@ -66,6 +66,8 @@ gtkwave tb_pes_se_M.vcd
 
 Now on observing both the waveforms we get the same result hence the synthesis and simulation are matching.
 
+### OpenLANE Flow :
+
 
 
  
