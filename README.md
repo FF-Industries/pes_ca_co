@@ -68,14 +68,14 @@ Now on observing both the waveforms we get the same result hence the synthesis a
 
 ### OpenLANE Flow :
 
-#### Steps to run synthesis in OpenLane:
+#### Steps to run synthesis in OpenLane :
 
 ```
 cd ~/OpenLane
 make mount
 ./flow.tcl -interactive
 package require openlane 0.9
-prep -design picorv32a
+prep -design pes_se_M
 run_synthesis
 ```
 
@@ -89,7 +89,7 @@ gedit pes_se_M.v
 
 <img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/320061bc-17f0-4e7a-8d47-f096b3d20a2d">
 
-#### To view the report:
+#### To view the report :
 ```
 cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/reports/synthesis
 gedit 1-synthesis.AREA_0.stat.rpt
@@ -97,10 +97,36 @@ gedit 1-synthesis.AREA_0.stat.rpt
 
 ![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/6164b7eb-6da3-4ded-8803-a3a82bc7ceda)
 
-#### Steps to perform Floorplanning and Placement
+#### Steps to perform Floorplanning and Placement :
+
 ```
 run_floorplan
 ```
 
+<img width="925" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/e1115cf6-f26c-4314-9a0f-126153006fdf">
 
+#### To view the floor planning in magic :
+
+```
+cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/floorplan
+magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
+```
+
+![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/b61838ea-bd29-4393-b539-1d68129d7185)
+
+![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/34fc1185-3138-4d0a-b460-07fb41c456c6)
+
+#### Steps To perform placemnet :
+
+```
+run_placement
+```
+
+<img width="927" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/8f46bc12-4bf6-4c97-87d1-fdfa73ca3d45">
+
+#### To view the placement in magic :
+```
+cd /home/kanish/Physical-Design-Using-Openlane/OpenLane/designs/picorv32a/runs/RUN_2023.09.10_16.53.19/results/placement
+magic -T /home/kanish/.volare/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read pico
+```
 
