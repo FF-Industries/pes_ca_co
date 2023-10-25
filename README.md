@@ -68,7 +68,21 @@ Now on observing both the waveforms we get the same result hence the synthesis a
 
 ### OpenLANE Flow :
 
+#### Steps to run synthesis in OpenLane:
 
+```
+cd ~/OpenLane
+make mount
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+run_synthesis
+```
 
- 
+<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/df6f1ea9-5cb1-4564-8461-1672f659f52b">
 
+#### To view nelist :
+```
+cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/synthesis
+gedit pes_se_M.v
+```
