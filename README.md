@@ -86,3 +86,21 @@ run_synthesis
 cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/synthesis
 gedit pes_se_M.v
 ```
+
+<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/320061bc-17f0-4e7a-8d47-f096b3d20a2d">
+
+#### To view the report:
+```
+cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/reports/synthesis
+gedit 1-synthesis.AREA_0.stat.rpt
+```
+
+![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/6164b7eb-6da3-4ded-8803-a3a82bc7ceda)
+
+#### Steps to perform Floorplanning and Placement
+```
+run_floorplan
+```
+
+
+
