@@ -145,7 +145,7 @@ magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/
 
 ![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/34fc1185-3138-4d0a-b460-07fb41c456c6)
 
-#### Steps To perform placemnet :
+#### Steps To perform placement :
 
 ```
 run_placement
@@ -153,8 +153,40 @@ run_placement
 
 <img width="927" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/8f46bc12-4bf6-4c97-87d1-fdfa73ca3d45">
 
-#### To view the placement in magic :
-```
+#### To View the Placement In Magic :
 
 ```
+cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/placement
+magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
+```
 
+![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/00b53fea-2fc2-43f8-af78-7fc9d4b638f8)
+
+![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/2590a6c0-0930-4eea-a123-ad30cbf3c2b0)
+
+#### Steps To Perform Clock Tree Synthesis :
+
+```
+run_cts
+```
+
+<img width="959" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/29fc91da-3211-4aa5-8210-54a0c6c6acb3">
+
+#### Steps To Perform Routing :
+
+```
+run_placement
+```
+
+<img width="955" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/a462e95e-5cba-4039-80b1-2ed3f46e5323">
+
+#### To View the Routing In Magic :
+
+```
+cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/routing
+magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
+```
+
+![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/6235f21c-8d41-4b26-94c1-025281a97f2a)
+
+![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/340979c0-f5b0-4ee0-91cd-2b094728643c)
