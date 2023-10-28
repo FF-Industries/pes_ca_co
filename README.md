@@ -68,6 +68,35 @@ Now on observing both the waveforms we get the same result hence the synthesis a
 
 ### OpenLANE Flow :
 
+#### config.json file :
+
+```
+{
+    "DESIGN_NAME": "pes_se_M",
+    "VERILOG_FILES": [
+        "dir::src/pes_se_M.v",
+        "dir::src/pes_se_M_half_adder.v",
+        "dir::src/pes_se_M_full_adder.v"
+    ],
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "DIODE_ON_PORTS": "in",
+    "GPL_CELL_PADDING": 2,
+    "DPL_CELL_PADDING": 2,
+    "CLOCK_PERIOD": 24,
+    "FP_CORE_UTIL": 35,
+    "pdk::sky130*": {
+        "MAX_FANOUT_CONSTRAINT": 6,
+        "scl::sky130_fd_sc_ms": {
+            "FP_CORE_UTIL": 30
+        }
+    }
+}
+
+```
+
 #### Steps to run synthesis in OpenLane :
 
 ```
@@ -126,29 +155,6 @@ run_placement
 
 #### To view the placement in magic :
 ```
-{
-    "DESIGN_NAME": "pes_se_M",
-    "VERILOG_FILES": [
-        "dir::src/pes_se_M.v",
-        "dir::src/pes_se_M_half_adder.v",
-        "dir::src/pes_se_M_full_adder.v"
-    ],
-    "CLOCK_PORT": "clk",
-    "CLOCK_NET": "clk",
-    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
-    "RUN_HEURISTIC_DIODE_INSERTION": true,
-    "DIODE_ON_PORTS": "in",
-    "GPL_CELL_PADDING": 2,
-    "DPL_CELL_PADDING": 2,
-    "CLOCK_PERIOD": 24,
-    "FP_CORE_UTIL": 35,
-    "pdk::sky130*": {
-        "MAX_FANOUT_CONSTRAINT": 6,
-        "scl::sky130_fd_sc_ms": {
-            "FP_CORE_UTIL": 30
-        }
-    }
-}
 
 ```
 
