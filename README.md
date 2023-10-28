@@ -127,11 +127,11 @@ run_placement
 #### To view the placement in magic :
 ```
 {
-    "DESIGN_NAME": "pes_se_M_full_adder",
+    "DESIGN_NAME": "pes_se_M",
     "VERILOG_FILES": [
-        "dir::src/pes_se_M_full_adder.v",
-        "dir::src/halfadder.v",
-        "dir::src/fulladder.v"
+        "dir::src/pes_se_M.v",
+        "dir::src/pes_se_M_half_adder.v",
+        "dir::src/pes_se_M_full_adder.v"
     ],
     "CLOCK_PORT": "clk",
     "CLOCK_NET": "clk",
@@ -147,9 +147,6 @@ run_placement
         "scl::sky130_fd_sc_ms": {
             "FP_CORE_UTIL": 30
         }
-    }
-}
-
     }
 }
 
