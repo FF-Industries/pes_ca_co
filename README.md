@@ -125,5 +125,30 @@ run_placement
 <img width="927" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/8f46bc12-4bf6-4c97-87d1-fdfa73ca3d45">
 
 #### To view the placement in magic :
+```
+{
+    "DESIGN_NAME": "pes_se_m",
+    "VERILOG_FILES": [
+        "dir::src/pes_se_M.v",
+        "dir::src/halfadder.v",
+        "dir::src/fulladder.v"
+    ],
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "DIODE_ON_PORTS": "in",
+    "GPL_CELL_PADDING": 2,
+    "DPL_CELL_PADDING": 2,
+    "CLOCK_PERIOD": 24,
+    "FP_CORE_UTIL": 35,
+    "pdk::sky130*": {
+        "MAX_FANOUT_CONSTRAINT": 6,
+        "scl::sky130_fd_sc_ms": {
+            "FP_CORE_UTIL": 30
+        }
+    }
+}
 
+```
 
