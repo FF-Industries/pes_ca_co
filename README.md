@@ -124,7 +124,7 @@ cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/repor
 gedit 1-synthesis.AREA_0.stat.rpt
 ```
 
-![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/6164b7eb-6da3-4ded-8803-a3a82bc7ceda)
+<img width="925" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/af7ecf1d-ae83-44fa-ad70-13b015cbcc19">
 
 #### Steps to perform Floorplanning and Placement :
 
@@ -132,7 +132,7 @@ gedit 1-synthesis.AREA_0.stat.rpt
 run_floorplan
 ```
 
-<img width="925" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/e1115cf6-f26c-4314-9a0f-126153006fdf">
+<img width="923" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/21641473-aa94-42a9-8666-73af726bb82b">
 
 #### To view the floor planning in magic :
 
@@ -160,7 +160,7 @@ cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/resul
 magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
 ```
 
-![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/00b53fea-2fc2-43f8-af78-7fc9d4b638f8)
+<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/468fd015-bef0-440b-81b6-6d688c33016b">
 
 ![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/2590a6c0-0930-4eea-a123-ad30cbf3c2b0)
 
