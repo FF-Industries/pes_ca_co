@@ -204,3 +204,17 @@ magic -T /home/aryankumar/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef
 
 <img width="925" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/d9332494-a96d-425c-9f1b-e8b9450b081f">&nbsp;
 
+#### Final congestion report :
+
+<img width="457" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/50f25e77-1def-4480-9e97-1ea5edb15e9d">&nbsp;
+
+<img width="499" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/5019c545-cab6-4caa-a3e1-280e911b84ea">&nbsp;
+
+<img width="428" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/2ebf8d91-3c7a-4816-9e9a-c7b2377312b6">&nbsp;
+
+
+
+
+
+
+
