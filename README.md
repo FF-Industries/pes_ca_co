@@ -108,19 +108,19 @@ prep -design pes_se_M
 run_synthesis
 ```
 
-<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/df6f1ea9-5cb1-4564-8461-1672f659f52b">
+<img width="923" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/d3e04ba7-c24c-496e-a003-e57e7113e096">
 
 #### To view nelist :
 ```
-cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/synthesis
+cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/results/synthesis
 gedit pes_se_M.v
 ```
 
-<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/320061bc-17f0-4e7a-8d47-f096b3d20a2d">
+<img width="922" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/4a28134b-b554-4205-ae9a-deb681272316">
 
 #### To view the report :
 ```
-cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/reports/synthesis
+cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/reports/synthesis
 gedit 1-synthesis.AREA_0.stat.rpt
 ```
 
@@ -137,8 +137,8 @@ run_floorplan
 #### To view the floor planning in magic :
 
 ```
-cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/floorplan
-magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
+cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/results/floorplan
+magic -T /home/aryankumar/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
 ```
 
 ![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/b61838ea-bd29-4393-b539-1d68129d7185)
@@ -156,7 +156,7 @@ run_placement
 #### To View the Placement In Magic :
 
 ```
-cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/placement
+cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/results/placements
 magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
 ```
 
@@ -183,7 +183,7 @@ run_placement
 #### To View the Routing In Magic :
 
 ```
-cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/routing
+cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/results/routing
 magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
 ```
 
