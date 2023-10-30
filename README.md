@@ -112,7 +112,7 @@ run_synthesis
 
 #### To view nelist :
 ```
-cd /OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/synthesis
+cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.25_03.10.42/results/synthesis
 gedit pes_se_M.v
 ```
 
