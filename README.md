@@ -141,9 +141,9 @@ cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/resul
 magic -T /home/aryankumar/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
 ```
 
-![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/b61838ea-bd29-4393-b539-1d68129d7185)
+<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/59af4a20-4386-4a4d-9d0a-02b5577a9674">
 
-![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/34fc1185-3138-4d0a-b460-07fb41c456c6)
+<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/dddd1161-6b9f-4092-9b38-b9d11472e31c">
 
 #### Steps To perform placement :
 
@@ -151,18 +151,18 @@ magic -T /home/aryankumar/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef
 run_placement
 ```
 
-<img width="927" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/8f46bc12-4bf6-4c97-87d1-fdfa73ca3d45">
+<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/b3cb2bdc-7329-4755-83f0-e093c10318ed">
 
 #### To View the Placement In Magic :
 
 ```
 cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/results/placements
-magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
+magic -T /home/aryankumar/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
 ```
 
-<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/468fd015-bef0-440b-81b6-6d688c33016b">
+<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/38901eea-576f-4bb3-aac8-95a1176b7649">
 
-![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/2590a6c0-0930-4eea-a123-ad30cbf3c2b0)
+<img width="924" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/687e8c2e-d185-4bae-adaa-07e0783fe84d">
 
 #### Steps To Perform Clock Tree Synthesis :
 
@@ -170,23 +170,37 @@ magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/
 run_cts
 ```
 
-<img width="959" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/29fc91da-3211-4aa5-8210-54a0c6c6acb3">
+<img width="921" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/1bd9d742-cce3-4517-9676-7b7974608c19">
+
+#### To View the cts Reports :
+
+```
+cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/logs/cts
+gedit 18-cts_sta.log
+```
+
+<img width="401" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/61160637-c55c-4386-92fe-114c34c23824">
+
+<img width="393" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/c7274beb-bb11-4b25-953a-d17048d38cd6">
+
+<img width="925" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/92349d34-7225-420e-b1f1-95ed0f07dc4b">
 
 #### Steps To Perform Routing :
 
 ```
-run_placement
+run_routing
 ```
 
-<img width="955" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/a462e95e-5cba-4039-80b1-2ed3f46e5323">
+<img width="923" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/311cb24a-c5d1-41e5-8548-0770bdef876e">
 
 #### To View the Routing In Magic :
 
 ```
 cd /home/aryankumar/OpenLane/designs/pes_se_M/runs/RUN_2023.10.30_21.51.12/results/routing
-magic -T /OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
+magic -T /home/aryankumar/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_se_M.def &
 ```
 
-![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/6235f21c-8d41-4b26-94c1-025281a97f2a)
+<img width="925" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/693f23e9-c311-4720-b326-4774c1b005e7">
 
-![image](https://github.com/FF-Industries/pes_se_M/assets/136846161/340979c0-f5b0-4ee0-91cd-2b094728643c)
+<img width="925" alt="image" src="https://github.com/FF-Industries/pes_se_M/assets/136846161/d9332494-a96d-425c-9f1b-e8b9450b081f">
+
